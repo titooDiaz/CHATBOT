@@ -12,7 +12,7 @@ if os.path.isfile(dotenv_path):
             os.environ[key] = value
 
 # Accede a la variable de entorno "KEY"
-KEY = os.getenv("KEY")
+KEY = os.getenv("KEY")#recuerda tener un archivo lalmada .env en la carpeta raiz, con la variable y tu KEY de la API
 
 os.environ["_BARD_API_KEY"] = KEY
 message = input("¿Qué deseas preguntar? ")
