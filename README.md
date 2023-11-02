@@ -10,7 +10,17 @@ Primero, crear un entorno virtual:
 Para instalar los paquetes necesarios:
 ### `pip install -r requirements.txt`
 
-Recuerda crear un archivo en la carpeta raiz llamado `.env`, y colocar tu API, la encontraras al darle inspeccionar a la pagina oficial de bard, mirando el apartado de aplicacion, y en las galletitas copia la KEY de `__Secure-1PSID`
+Para usar la API de Bard en tu proyecto de GitHub, primero debes crear un archivo en la carpeta raíz del proyecto llamado .env. En este archivo, debes colocar tu clave API de Bard.
+Para encontrar tu clave API de Bard, abre la página oficial de Bard en tu navegador. En la parte inferior de la página, haz clic en el botón "Inspeccionar".
+En la ventana de inspección, haz clic en la pestaña "Cookies". En la lista de cookies, busca la cookie `__Secure-1PSID`. El valor de esta cookie es tu clave API de Bard.
+
+Copia el valor de la cookie y pégalo en el archivo .env. El archivo .env debe tener el siguiente formato:
+`BARD_API_KEY=Tu_clave_API_de_Bard`
+
+Consejos:
+Mantén tu clave API de Bard segura. No la compartas con nadie.
+Puedes colocar tu clave API de Bard en el archivo `.env` de tu proyecto de GitHub. Sin embargo, esto no es recomendable, ya que tu clave API será visible para todos los usuarios que tengan acceso al proyecto.
+Si quieres mantener tu clave API de Bard segura, puedes usar un servicio de gestión de claves API. Estos servicios te permiten almacenar tus claves API de forma segura y acceder a ellas desde tus proyectos.
 
 <hr/>
 
